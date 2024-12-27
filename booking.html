@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Desi Tales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Book Your Dream Trip</h1>
+        <p>Fill in the details below to start your unforgettable journey!</p>
+    </header>
+    <main class="booking-container">
+        <form class="booking-form" action="#" method="POST">
+            <h2>Traveler Information</h2>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <h2>Trip Details</h2>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select a destination</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="agra">Agra</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="manali">Manali</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="people">Number of Travelers</label>
+                <input type="number" id="people" name="people" min="1" max="20" placeholder="Enter number of travelers" required>
+            </div>
+            <h2>Payment Information</h2>
+            <div class="form-group">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="" disabled selected>Select a payment method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="upi">UPI</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Special Requests (Optional)</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Let us know any special requests"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </main>
+</body>
+</html>
